@@ -1,0 +1,59 @@
+/* Common styles */
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow: hidden;
+}
+ul,li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.5s;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-bottom: 0;
+}
+.loading-screen,.inner-loading-screen{
+    z-index: 999;
+}
+
+/* side-menu */
+nav>*{
+    margin-bottom: 20px;
+}
+.menu-controller span,.img-card,.cursor-pointer{
+    cursor: pointer;
+}
+.menu-controller img{
+    width: 50px;
+}
+/* main content */
+.img-overlay{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+}
+.img-card:hover .img-overlay{
+    height: 100%;
+    transition: height 0.5s;
+}
+/* search */
+::placeholder{
+    color:grey !important;
+}
